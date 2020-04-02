@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt">
+     <head>
+          <meta charset="utf-8" />
+          <title>Anúncio Bombarco</title>
+          <style>
+              .container {
+                  display: flex;
+                  position: relative;
+                  flex-direction: column;
+                  width: 100% !important;
+                  justify-content: center;
+                  
+              }
+              #top {
+                  display: flex;
+                  
+                  
+
+              }
+
+              .box1 {
+                width: 955px;
+                
+                margin-left: 300px;
+                display: flex;
+                justify-content:left
+
+              }
+
+              .top1 {
+                font-family: opensans;
+                font-size: 14px;
+                line-height: 14px;
+                color: #fff;
+                margin-bottom: 30px;
+                position: absolute;
+                bottom: 74px;
+                right: 674px;
+                z-index: 99;
+                display: inline-block;
+                margin-right: 80px;
+                top: 30px;
+              }
+
+              .top2 {
+                font-family: museo700-regular;
+                font-size: 36px;
+                line-height: 36px;
+                color: #fff;
+                display: inline-block;
+                margin-bottom: 30px;
+                position: absolute;
+                bottom: 247px;
+                top: 55px;
+                right: 518px;
+                width: 381px;
+                margin-right: 50px;
+              }
+
+              .top3 {
+                font-family: museo500-regular;
+                font-size: 17px;
+                line-height: 17px;
+                color: #fff;
+                margin-bottom: 30px;
+                position: absolute;
+                bottom: 0;
+                right: 363px;
+                z-index: 99;
+                display: inline-block;
+                margin-right: 80px;
+                width: 500px;
+                top: 110px;
+              }
+
+              .forms {
+                  margin-top: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 10px;
+                  
+
+              }
+
+              .coluna {
+                  display: flex;
+                  flex-direction : column;
+                  margin-left: 80px;
+                  
+              }
+
+              .barra {
+                width: 80%;
+                border-bottom: 2px solid #00918e;
+                padding: 10px;
+                display: flex;
+                align-content: center;
+                margin: auto;
+
+                
+              }
+
+              .line1 {
+                  border-radius: 50px;
+                  padding: 10px;
+              }
+
+              .conteudo {
+                  margin-right: 30px;
+                  font-family: museo500-regular;
+                  color: #0f2e44;
+                  font-weight:900;
+                  font-size: 20px;
+                
+              }
+              
+              .names {
+                  color: #00918e;
+                  font-size: 25px;
+                  font-weight:900;
+              }
+
+              
+
+              .radio {
+                width: 19px;
+                height: 19px;
+                border: solid 2px #00918e;
+              }
+
+
+          </style>
+    </head> 
+    <body>
+        <div class="container">
+            <div id="top">
+                <img src="https://www.bombarco.com.br/themes/bombarco/img/bombarco_cadastroanuncio.png" alt="bgcadastro">
+            </div>    
+                <div class="box1">
+                    <span class="top1"> Home > Anunciar > Cadastro </span>
+                    <span class="top2"> Cadastre seu anúncio </span>
+                    <span class="top3"> Preencha os campos abaixo para criar seu anúncio</span>
+                </div>
+
+                <span>
+                    <b>Atenção:</b>
+                    Os campos com * são de preenchimento obrigatório. 
+                </span>
+
+                <form class=forms>
+                    
+                    <div class="coluna">
+                        <label for="email" >E-mail para contato*:</label>
+                        <input type="email" id="email" name="email" size="30px" class="line1">
+                    </div>
+
+                    <div class="coluna">
+                        <label for="estado" >Estado*:</label>
+                        <select id="estado" name="estado" class="line1">
+                            <option value="selecionar" selected>Selecionar</option>
+                            <option value="Acre">Acre</option>
+                            <option value="Alagoas">Alagoas</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Amapá">Amapá</option>
+                            <option value="Bahia">Bahia</option>
+                            <option value="Ceará">Ceará</option>
+                            <option value="Distrito Federal">Distrito Federal</option>
+                            <option value="Espírito Santo">Espírito Santo</option>
+                            <option value="Goiás">Goiás</option>
+                            <option value="Maranhão">Maranhão</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="Matogrosso">Matogrosso</option>
+                            <option value="Pará">Pará</option>
+                            <option value="Paraíba">Paraíba</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Piauí">Piauí</option>
+                            <option value="Paraná">Paraná</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                            <option value="Rondônia">Rondônia</option>
+                            <option value="Roraima">Roraima</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="Santa Cataria">Santa Cataria</option>
+                            <option value="Sergipe">Sergipe</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Tocantins">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div class="coluna">
+                        <label for="cidade">Cidade*:</label>
+                        <select id="cidade" name="cidade" class="line1">
+                            <option value="selecionar" selected>Selecionar</option>
+                        </select>
+                    </div>
+
+                    
+                </form>
+                <div class="barra"></div>
+                <form class=forms>
+                    <label for="catanun" class="conteudo names">Categoria do Anúncio*:</label>
+                    <input type="radio" id="barcopesca" name="cat" value="barcopesca" class="radio">
+                    <label for="barcopesca" class="conteudo">Barco de Pesca</label>
+
+                    <input type="radio" id="lancha" name="cat" value="lancha" class="radio">
+                    <label for="barcopesca" class="conteudo">Lancha</label>
+
+                    <input type="radio" id="veleiro" name="cat" value="veleiro" class="radio">
+                    <label for="barcopesca" class="conteudo">Veleiro</label>
+
+                    <input type="radio" id="jetski" name="cat" value="jetski" class="radio">
+                    <label for="barcopesca" class="conteudo">Jet Ski</label>
+
+
+                </form>
+                <div class="barra"></div>
+                <form class=forms>
+                    <label for="estprod" class="conteudo names">Estado do Produto*:</label>
+                    <input type="radio" id="novo" name="estprod" value="novo" class="radio">
+                    <label for="novo" class="conteudo">Novo</label>
+
+                    <input type="radio" id="usado" name="estprod" value="usado" class="radio">
+                    <label for="barcopesca" class="conteudo">Usado</label>
+
+                    <label for="cidade" class="names">Ano*:</label>
+                        <select id="ano" name="ano" class="line1">
+                            <option value="selecionar" selected>Selecionar</option>
+                        </select>
+
+        </div>
+                
+            
+              
+
+    </body>
+
+</html>        
