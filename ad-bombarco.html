@@ -76,6 +76,11 @@
             padding: 10px;
         }
         
+        .forms-junto {
+            display: flex;
+            justify-content: center;
+        }
+        
         .coluna {
             display: flex;
             flex-direction: column;
@@ -85,6 +90,15 @@
         .barra {
             width: 80%;
             border-bottom: 2px solid #00918e;
+            padding: 10px;
+            display: flex;
+            align-content: center;
+            margin: auto;
+        }
+
+        .barra2 {
+            width: 100%;
+            border-bottom: 4px solid #00918e;
             padding: 10px;
             display: flex;
             align-content: center;
@@ -106,7 +120,7 @@
         
         .names {
             color: #00918e;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 900;
         }
         
@@ -119,7 +133,7 @@
         .plus {
             display: flex;
             justify-content: flex-end;
-            margin-right: 15%;
+            margin-right: 23%;
         }
 
         .interrogacao {
@@ -130,7 +144,20 @@
             margin-left: 130px;
         }
         #inter1 {
-            margin-right: 430px;
+            margin-right: 400px;
+        }
+
+        #inter2 {
+            margin-left: 90px;
+        }
+
+        #inter3 {
+            margin-left: 235px;
+        }
+
+        #inter4 {
+            margin-left: 220px;
+            margin-right: 180px;
         }
 
         .container0 {
@@ -167,12 +194,102 @@
             max-width: 100%;
             margin-left: 8%;
         }
+
+        .container5 {
+            display: flex;
+            justify-content: flex-start;
+            max-width: 80%;
+            margin-left: 8%;
+            align-content: center;
+
+        }
+
+        .container6 {
+            display: flex;
+            justify-content: flex-start;
+            max-width: 100%;
+            margin-left: 7%;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            align-items: center;
+            
+        }
+
+        #descricao {
+            margin-top: 50px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        #turbine {
+            font-family: museo700-regular;
+            font-size: 26px;
+            color: #0f2e44;
+            margin-left: 30px;
+            font-weight:900;
+            max-width: 140px;
+        }
+
+        #textoturbine {
+            font-size: 14px;
+            max-width: 400px;
+            margin-left: 30px;
+        }
+
+        .linefinalizar {
+            width: 100%;
+            height: 125px;
+            background-color: #0f2e44;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .turb {
+            color: #00918e;
+            font-family: museo700-regular;
+            font-size: 15px;
+            font-weight:900;
+            margin-left: 100px;
+        }
+
+        .total {
+            color:#fff;
+            font-family: museo700-regular;
+            font-size: 27px;
+            font-weight:900;
+            margin-left: 100px;
+        }
+
+        .enviar {
+            background-color: #ff6800;
+            border-radius: 25px;
+            border-color: #ff6800;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+            font-size: 15px;
+            font-weight:900;
+            font-family: museo700-regular;
+        }
+
+        .finalizar {
+            margin-left: 400px;
+        }
+
+
     </style>
 </head>
 
 <body>
-    <!-- <div class="container">
-        <div id="top">
+    <div class="container">
+        <!-- <div id="top">
             <img src="https://www.bombarco.com.br/themes/bombarco/img/bombarco_cadastroanuncio.png" alt="bgcadastro" class="forms">
         </div>
         <div class="container0">
@@ -188,6 +305,9 @@
                 Os campos com * são de preenchimento obrigatório. 
             </span>
         </div>
+
+        <!-- INFORMAÇÕES INICIAIS EMAIL, ESTADO E CIDADE-->
+
         <div class="container2">
             <form class=forms>
 
@@ -238,6 +358,11 @@
                 </div>
             </form>
         </div>
+
+
+        <!-- CATEGORIA DA EMBERCAÇÃO-->
+
+
         <div class="barra"></div>
         <div class="container3">
             <form class=forms>
@@ -256,7 +381,13 @@
 
             </form>
         </div>
-            <div class="barra"></div>
+
+
+            <!-- INFORMAÇÕES DA EMBARCAÇÃO -->
+
+
+        <div class="barra"></div>
+
         <div class="container4">
             <form class=forms>
                 <label for="estprod" class="conteudo names line1">Estado do Produto*:</label>
@@ -267,43 +398,639 @@
                 <label for="barcopesca" class="conteudo line1">Usado</label>
 
                 <label for="cidade" class="names">Ano*:&nbsp;</label>
-                <select id="ano" name="ano" class="line1">
+                <select id="ano" name="ano" class="line1" style ="height: 40px;">
                     <option value="selecionar" selected>Selecionar</option>
                 </select>
 
                 <label for="valor" class="names">&nbsp;Valor (R$):</label>
-                <input type="text" id="valor" name="valor" class="line1">
+                <input type="text" id="valor" name="valor" class="line1" style ="height: 15px;">
                 <img src="interrogacao.png" width="27" height="27" title="Anúncios sem valor tem menos prioridade na busca" class="line1">
 
             </form>
         </div>
             <form>
                 <div class="plus">
-                    <input type="radio" id="semvalor" name="semvalor" value="semvalor" class="radio line1">
+                    <input type="checkbox" id="semvalor" name="semvalor" value="semvalor" class="radio line1">
                     <label for="semvalor">Não desejo informar o valor do anúncio.</label>
                 </div>
             </form>
+
+            <!-- FABRICANTE / MODELO -->
+
+
             <div class="barra"></div>
             <div class="interrogacao">
                 <div id="inter1"><img src="interrogacao.png" width="27" height="27" title="Escolha o fabricante/estaleiro da sua embarcação"></div>
                 <div><img src="interrogacao.png" width="27" height="27" title="Qual o modelo da sua embarcação?"></div>
             </div>
-            <div class="container4">
-                <form class="forms">
-                    <label for="fabricante" class="names line1">Fabricante*:</label>
-                    <select id="fabricante" name="fabricante" class="line1" style="width: 300px;">
-                        <option value="selecionar" selected>Selecionar</option>
-                    </select>
 
-                    <label for="modelo" class="names line1">Modelo*:</label>
-                    <select id="Modelo" name="Modelo" class="line1" style="width: 300px;">
-                        <option value="selecionar" selected>Selecionar</option>
-                    </select>
+        <div class="container3">
+            <form class="forms-junto">
+                <label for="fabricante" class="names line1">Fabricante*:</label>
+                <select id="fabricante" name="fabricante" class="line1" style="width: 300px;">
+                    <option value="selecionar" selected>Selecionar</option>
+                </select>
+
+                <label for="modelo" class="names line1">Modelo*:</label>
+                <select id="Modelo" name="Modelo" class="line1" style="width: 300px;">
+                    <option value="selecionar" selected>Selecionar</option>
+                </select>
+            </form>
+        </div>
+        <div class="interrogacao">
+            <div>
+                <input type="checkbox" id="semfabric" name="semfabric" value="semfabric" class="radio line1">
+                <label for="semfabric">Não encontrou o fabricante? Digite no campo acima.</label>
+            </div>
+            <div id="inter2">
+                <input type="checkbox" id="semmodelo" name="semmodelo" value="semmodelo" class="radio line1">
+                <label for="semmodelo">Não encontrou o modelo? Digite no campo acima.</label>
+            </div>
+        </div>
+
+        <!-- TIPO DE COMBUSTÍVEL -->
+
+
+        <div class="barra"></div>
+        <div class="container3">
+            <form class="forms">
+                <label for="combustivel" class="names">Combustível*:&nbsp;</label>
+                <select id="combustivel" name="combustivel" class="line1">
+                    <option value="selecionar" selected>Selecionar</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="gasoliediesel">Gasolina e Diesel</option> 
+                </select>
+            </form>
+        </div>
+
+        <!-- TIPO DA EMBARCAÇÃO -->
+
+
+        <div class="barra"></div>
+        <div class="interrogacao">
+            <div id="inter1"><img src="interrogacao.png" width="27" height="27" title="Qual a versão da sua Lancha, Veleiro ou Jet Ski?"></div>
+            <div id="inter2"><img src="interrogacao.png" width="27" height="27" title="Quantos passageiros podem navegar na sua embarcação?"></div>
+            <div id="inter3"><img src="interrogacao.png" width="27" height="27" title="Para quantos passageiros existem acomodações para dormir na embarcação?"></div>
+        </div>
+        <div class="container5">
+            <form class="forms-junto">
+                <div class="row">
+                    <label for="tipo" class="names">Tipo*:</label>
+                    <input type="text" id="tipo" name="tipo" style="height: 18px" class="line1">
+                </div>
+                <div class="row">
+                    <label for="tamanho" class="names">Tamanho (pés)*:</label>
+                    <input type="text" id="tamanho" name="tamanho" style="height: 18px; width: 100px;" class="line1">
+                </div>
+                <div class="row">
+                    <label for="passdia" class="names">Passageiros dia*:</label>
+                    <input type="text" id="passdia" name="passdia" style="height: 18px; width: 100px;" class="line1">
+                </div>
+                <div class="row">
+                    <label for="passnoite" class="names">Passageiros noite*:</label>
+                    <input type="text" id="passnoite" name="passnoite" style="height: 18px; width: 100px;" class="line1">
+                </div>
+            </form>  
+        </div>
+        <div class="interrogacao">
+            <input type="checkbox" id="editdados" name="editdados" value="editdados" class="radio line1">
+            <label for="editdados">Editar dados.</label>
+        </div>
+
+
+        <!-- MOTORIZAÇÃO -->
+
+
+        <div class="barra"></div>
+        
+        <div class="interrogacao">
+            <input type="checkbox" id="semmotor" name="semmotor" value="semmotor" class="radio line1">
+            <label for="semmotor">Minha embarcação não possui motor.</label>
+        </div>
+        <div class="container4">
+            <form class="forms">
+                <label for="motor" class="names line1">Motor:&nbsp;</label>
+                <select id="motor" name="motor" class="line1">
+                    <option value="selecionar" selected>Selecionar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="marcamotor" style="margin-left: 40px;" class="names line1">Marca:&nbsp;</label>
+                <select id="marcamoto" name="marcamoto" style="width: 200px;" class="line1">
+                    <option value="selecionar" selected>Selecionar</option>
+                </select>
+
+                <label for="modelomotor" style="margin-left: 40px;" class="names line1">Modelo:&nbsp;</label>
+                <select id="modelomoto" name="modelomoto" style="width: 200px;" class="line1">
+                    <option value="selecionar" selected>Selecionar</option>
+                </select>
+            </form>
+        </div>
+        <div class="interrogacao">
+            <div id="inter4">
+                <input type="checkbox" id="semmarcamotor" name="semmarcamotorc" value="semmarcamotor" class="radio line1">
+                <label for="semmarcamotor">Não achei a marca.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="semmodelomotor" name="semmodelomotor" value="semmodelomotor" class="radio line1">
+                <label for="semmodelomotor">Não achei o modelo.</label>
+            </div>
+        </div>
+
+        <div class="container6">
+            <form class="forms">
+                <div class="row">
+                    <label for="tipomotor" class="names">Tipo:&nbsp;</label>
+                    <input type="text" id="tipomotor" name="tipomotor" style="height: 18px" class="line1">
+                </div>
+                <div class="row">
+                    <label for="potenciamotor" style="margin-left: 40px;" class="names">Potência (HP):&nbsp;</label>
+                    <input type="text" id="potenciamotor" name="potenciamotor" style="height: 18px" class="line1">
+                </div>
+                <div class="row">
+                    <label for="horasmotor" style="margin-left: 40px;" class="names">Horas de utilização:&nbsp;</label>
+                    <input type="text" id="horasmotor" name="horasmotor" style="height: 18px" class="line1">
+                </div>
+            </form>
+        </div>
+
+        <!-- ACESSÓRIOS, COMUNICAÇÃO E ELETRONICOS -->
+
+
+        <div class="barra"></div>
+        <div class="container3">
+            <form class="forms">
+                <div class="names">
+                    Acessórios e Equipamentos
+                </div>
+            </form>
+        </div>
+        <div class="container2">
+            <div class="row">
+                <div class=coluna>
+                    <div>
+                        <input type="checkbox" id="ancora" name="ancora" value="ancora" class="radio line1">
+                        <label for="ancora">Âncora</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="carreta" name="carreta" value="carreta" class="radio line1">
+                        <label for="carreta">Carreta de encalhe</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cooler" name="cooler" value="cooler" class="radio line1">
+                        <label for="cooler">Cooler</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lona" name="lona" value="lona" class="radio line1">
+                        <label for="lona">Lona de proteção</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tecamadeira" name="tecamadeira" value="tecamadeira" class="radio line1">
+                        <label for="tecamadeira">Teca Madeira</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="toldo" name="" value="toldo" class="radio line1">
+                        <label for="toldo">Toldo com fechamento total</label>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div>
+                        <input type="checkbox" id="boialazer" name="boialazer" value="boialazer" class="radio line1">
+                        <label for="boialazer">Bóias de lazer</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="carretarodo" name="carretarodo" value="carretarodo" class="radio line1">
+                        <label for="carretarodo">Carreta rodoviária</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="equipesp" name="equipesp" value="equipesp" class="radio line1">
+                        <label for="equipesp">Equipamentos Esportivos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tqaguanegra" name="tqaguanegra" value="tqaguanegra" class="radio line1">
+                        <label for="tqaguanegra">Tanque de águas negras</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tecasint" name="tecasint" value="tecasint" class="radio line1">
+                        <label for="tecasint">Teca sintética</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="vasomanual" name="vasomanual" value="vasomanual" class="radio line1">
+                        <label for="vasomanual">Vaso Manual</label>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div>
+                        <input type="checkbox" id="boteinflavel" name="boteinflavel" value="boteinflavel" class="radio line1">
+                        <label for="boteinflavel">Bote inflável</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="churrasqueira" name="churrasqueira" value="churrasqueira" class="radio line1">
+                        <label for="churrasqueira">Churrasqueira</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lancaancora" name="lancaancora" value="lancaancora" class="radio line1">
+                        <label for="lancaancora">Lançador de Âncora</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tapete" name="tapete" value="tapete" class="radio line1">
+                        <label for="tapete">Tapete</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="toldo2" name="toldo2" value="toldo2" class="radio line1">
+                        <label for="toldo2">Toldo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="defensas" name="defensas" value="defensas" class="radio line1">
+                        <label for="defensas">Defensas</label>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+        <div class="container3">
+            <form class="forms">
+                <div class="names">
+                    Comunicação e Navegação
+                </div>
+            </form>
+        </div>
+
+        <div class="container2">
+            <div class="row">
+                <div class=coluna>
+                    <div>
+                        <input type="checkbox" id="ais" name="ais" value="ais" class="radio line1">
+                        <label for="ais">AIS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dirhidri" name="dirhidri" value="dirhidri" class="radio line1">
+                        <label for="dirhidri">Direção Hidráulica</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="fishifinder" name="fishifinder" value="fishifinder" class="radio line1">
+                        <label for="fishifinder">Fishifinder</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="joystick" name="joystick" value="joystick" class="radio line1">
+                        <label for="joystick">Joystick</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="radar" name="radar" value="radar" class="radio line1">
+                        <label for="radar">Radar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sonda" name="sonda" value="sonda" class="radio line1">
+                        <label for="sonda">Sonda</label>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div>
+                        <input type="checkbox" id="bow" name="bow" value="bow" class="radio line1">
+                        <label for="bow">Bow Thrusters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="epirb" name="epirb" value="epirb" class="radio line1">
+                        <label for="epirb">Epirb</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="flaps" name="flaps" value="flaps" class="radio line1">
+                        <label for="flaps">Flaps</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="medvelo" name="medvelo" value="medvelo" class="radio line1">
+                        <label for="medvelo">Medidor de velocidade</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="radiovhf" name="radiovhf" value="radiovhf" class="radio line1">
+                        <label for="radiovhf">Rádio VHF</label>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div>
+                        <input type="checkbox" id="bussula" name="bussula" value="bussula" class="radio line1">
+                        <label for="bussula">Bússola</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="estabmov" name="estabmov" value="estabmov" class="radio line1">
+                        <label for="">Estabilizador de movimento</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rastreador" name="rastreador" value="rastreador" class="radio line1">
+                        <label for="rastreador">Rastreador</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gps" name="gps" value="gps" class="radio line1">
+                        <label for="gps">GPS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pilotaut" name="pilotaut" value="pilotaut" class="radio line1">
+                        <label for="pilotaut">Piloto automático</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <form class="forms">
+                <div class="names">
+                    Eletrônicos
+                </div>
+            </form>
+        </div>
+
+        <div class="container2">
+            <div class="row">
+                <div class=coluna>
+                    <div>
+                        <input type="checkbox" id="adega" name="adega" value="adega" class="radio line1">
+                        <label for="adega">Adega</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="antsat" name="antsat" value="antsat" class="radio line1">
+                        <label for="antsat">Antena de TV via satélite</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="autfala" name="autfala" value="autfala" class="radio line1">
+                        <label for="autfala">Auto Falantes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="blower" name="blower" value="blower" class="radio line1">
+                        <label for="blower">Blower</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cammonit" name="cammonit" value="cammonit" class="radio line1">
+                        <label for="cammonit">Camera de monitoramento</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dessanilizadores" name="dessanilizadores" value="dessanilizadores" class="radio line1">
+                        <label for="dessanilizadores">Dessanilizadores</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="fogao" name="fogao" value="fogao" class="radio line1">
+                        <label for="fogao">Fogão</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gerador" name="gerador" value="gerador" class="radio line1">
+                        <label for="gerador">Gerador</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="luzled" name="luzled" value="luzled" class="radio line1">
+                        <label for="luzled">Luz de Led</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="vasoelet" name="vasoelet" value="vasoelet" class="radio line1">
+                        <label for="vasoelet">Vaso Elétrico</label>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div>
+                        <input type="checkbox" id="amplific" name="amplific" value="amplific" class="radio line1">
+                        <label for="amplific">Amplificador</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="aparelhosom" name="aparelhosom" value="aparelhosom" class="radio line1">
+                        <label for="aparelhosom">Aparelho de som</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bateria" name="bateria" value="bateria" class="radio line1">
+                        <label for="bateria">Bateria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="boiler" name="boiler" value="boiler" class="radio line1">
+                        <label for="boiler">Boiler</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="carregbat" name="carregbat" value="carregbat" class="radio line1">
+                        <label for="carregbat">Carregador de Bateria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="desumidificador" name="desumidificador" value="desumidificador" class="radio line1">
+                        <label for="desumidificador">Desumidificador</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="frigobar" name="frigobar" value="frigobar" class="radio line1">
+                        <label for="frigobar">Frigobar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="guinchoelet" name="guinchoelet" value="guinchoelet" class="radio line1">
+                        <label for="guinchoelet">Guincho elétrico</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="microondas" name="microondas" value="microondas" class="radio line1">
+                        <label for="microondas">Micro-ondas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ventilador" name="ventilador" value="ventilador" class="radio line1">
+                        <label for="ventilador">Ventilador</label>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div>
+                        <input type="checkbox" id="antaberta" name="antaberta" value="antaberta" class="radio line1">
+                        <label for="antaberta">Antena de TV aberta</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="arcond" name="arcond" value="arcond" class="radio line1">
+                        <label for="arcond">Ar condicionado</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="biodegradador" name="biodegradador" value="biodegradador" class="radio line1">
+                        <label for="biodegradador">Biodegradador</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bombaporao" name="bombaporao" value="bombaporao" class="radio line1">
+                        <label for="bombaporao">Bomba de porão</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cooktop" name="cooktop" value="cooktop" class="radio line1">
+                        <label for="cooktop">Cooktop</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dvd" name="dvd" value="dvd" class="radio line1">
+                        <label for="dvd">DVD</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="geladeira" name="geladeira" value="geladeira" class="radio line1">
+                        <label for="geladeira">Geladeira</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="icemakers" name="icemakers" value="icemakers" class="radio line1">
+                        <label for="icemakers">Icemakers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tv" name="tv" value="tv" class="radio line1">
+                        <label for="tv">TV</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- DESCRIÇÃO DO ANÚNCIO -->
+
+
+        <div class="container2">
+            <div class="row">
+                <form class="forms">
+                    <div class=coluna>
+                        <div class="names">
+                            Descrição*:
+                        </div>
+                        <div>
+                            <img src="interrogacao.png" width="27" height="27" title="Os clientes gostam de saber todas as informações sobre a sua embarcação, forneça detalhes que possam tornar seu anúncio ainda mais atrativo." class="line1">
+                        </div>
+                    </div>
                 </form>
+
+                <div>
+                    <textarea id="descricao" rows="10" cols="90" name="descricao"></textarea>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- TURBINAR ANÚNCIO -->
+
+
+        <div class="barra2"></div>
+
+        <div class="container3">
+            <form class="forms">
+                <div class="row">
+                    <div>
+                        <img src="foguete.png" width="39" height="66" class="line1">
+                    </div>
+
+                    <div id="turbine">
+                        Turbine seu Anúncio!
+                    </div>
+
+                    <div id=textoturbine>
+                        Agora você pode turbinar o seu anúncio com as nossas
+                         opções de adicionais, tornando seu anúncio mais completo e 
+                         aumentando suas chances de conversão!
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="barra"></div>
+
+        <div class="interrogacao">
+            <div id="inter1">
+                <img src="interrogacao.png" width="27" height="27" title="Você escolhe quantas vezes (número de impressões) e por quanto tempo (Período) deseja ser visto, então seu anúncio sempre aparecerá nas áreas Anúncios patrocinados do bombarco, aumentando bastante as suas chances de conversão">
+            </div>
+        </div>
+
+        <div class="container1">
+            <form class="forms-junto">
+                <div>
+                    <input type="checkbox" id="prioridade" name="prioridade" value="prioridade" class="radio line1">
+                    <label for="prioridade" class="names">Prioridade de Exibição (R$ 99,00)</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="barra"></div>
+
+        <div class="container3">
+            <form class="forms">
+                <div>
+                    <input type="checkbox" id="addfotos" name="addfotos" value="addfotos" class="radio line1">
+                    <label for="addfotos" class="names">Adicionar pacote com 10 fotos (R$ 4,90)</label>
+                </div>
+             </form>
+        </div>
+
+        <div class="barra"></div>
+
+        <div class="container3">
+            <form class="forms">
+                <div>
+                    <input type="checkbox" id="addvideo" name="addvideo" value="addvideo" class="radio line1">
+                    <label for="addvideo" class="names">Adicionar vídeo (URL) (R$ 15.00)</label>
+                </div>
+             </form>
+        </div>
+
+        <div class="barra"></div>
+
+        <div class="interrogacao">
+            <div id="inter1">
+                <img src="interrogacao.png" width="27" height="27" title="Nas listagens sua embarcação aparecerá com um selo de destaque, chamando atenção do usuário">
+            </div>
+        </div>
+
+        <div class="container1">
+            <form class="forms-junto">
+                <div>
+                    <input type="checkbox" id="selodestaque" name="selodestaque" value="selodestaque" class="radio line1">
+                    <label for="selodestaque" class="names">Aparecer com selo de destaque na listagem (R$ 2.90)</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="barra"></div>
+
+        <div class="container3">
+            <form class="forms">
+                <div>
+                    <input type="checkbox" id="addtitulo" name="addtitulo" value="addtitulo" class="radio line1">
+                    <label for="addtitulo" class="names">Adicionar título no anúncio - 40 caracteres (R$ 9.90)</label>
+                </div>
+             </form>
+        </div>
+
+        <div class="linefinalizar">
+            <div class="coluna">
+                <div class="turb">
+                    TURBINADA:
+                </div>
+
+                <div class="total">
+                    R$ 0,00
+                </div>
+            </div>
+
+            <div class="coluna">
+                <div class="turb">
+                    TOTAL:
+                </div>
+
+                <div class="total">
+                    R$ 0,00
+                </div>
+            </div>
+
+            <div class="finalizar">
+                <input type ="submit" value="FINALIZAR" id="enviar" class="enviar"> 
             </div>
 
         </div>
 
+        <footer class="forms-junto">
+            <img src="https://www.bombarco.com.br/themes/bombarco/img/bombarco.png" alt="logobombarco" class="forms">
+        </footer>
+    
+        
+
+
+
+
+        
+    </div>
+
 </body>
 
 </html>
+
